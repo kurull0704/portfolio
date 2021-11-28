@@ -9,6 +9,23 @@ header {
     height: 100px;
 }
 
+.navigation_list {
+    display:flex;
+    flex-direction: row;
+    justify-content: end;
+    list-style: none;
+    padding: 0;
+}
+
+.navigation_list_item {
+    margin-right: 10px;
+}
+
+.navigation_list_item a {
+    color: inherit;
+    text-transform: uppercase;
+}
+
 aside {
     background-color: red;
     height: 100%;
