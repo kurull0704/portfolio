@@ -1,0 +1,44 @@
+/* Common root variables */
+:root {
+    --white: #fff;
+    --grey: #ddd2e5;
+    --black: #000;
+    --chocolate: #d2691e;
+    --blueviolet: #8a2be2;
+    --red: #fb3232;
+    --blue-1: #0088CC;
+    --blue-2: #0058cc;
+    --aqua: #00ffff;
+    --green: #81ff8a;
+}
+
+/* Apply styles to all elements */
+* {
+    box-sizing: border-box; /* говорит браузеру учитывать любые границы и внутренние отступы в значениях, которые вы указываете в ширине и высоте элемента */
+}
+
+html,
+body {
+    height: 100%;
+    font-size: 16px; /* 'rem' unit gets its size from here, related to this value */
+    background-color: var(--white);
+}
+
+main {
+    flex-grow: 1; /* Fill rest of empty body */
+}
+
+/* Common content wrapper */
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0 15px;
+    height: 100%;
+}
+
+th, /* th - thead column */
+td, /* td - tbody column */
+table {
+    border: 1px solid var(--black);
+    border-collapse: collapse;
+}

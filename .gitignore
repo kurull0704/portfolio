@@ -1,0 +1,4 @@
+# This file is used to exclude some workspaces / files / extensions from commit.
+
+node_modules
+.idea

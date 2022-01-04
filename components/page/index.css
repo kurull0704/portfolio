@@ -1,5 +1,6 @@
 .page {
     display: flex;
     flex-direction: column;
+    align-content: space-between;
     height: 100%;
 }
