@@ -42,5 +42,14 @@
 .hobbies-section {
 }
 
-.contact-form-section {
+.social-networks-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    height: 24px;
 }
