@@ -1,129 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="assets/css/iconfont.css">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="components/content/index.css">
-    <link rel="stylesheet" href="components/header/index.css">
-    <link rel="stylesheet" href="components/footer/index.css">
-</head>
-<body>
-    <div class="page">
-        <header>
-            <div class="container">
-                <nav class="navigation">
-                    <ul class="navigation_list">
-                        <li class="navigation_list_item"><a href="#">Main Info</a></li>
-                        <li class="navigation_list_item"><a href="#">My Projects</a></li>
-                        <li class="navigation_list_item"><a href="#">Contact Me</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <main>
-            <div class="container content">
-                <aside class="aside-information">
-                    <div class="avatar_wrapper">
-                        <img class="avatar" src="assets/img/photo.jpg" alt="My avatar">
-                    </div>
-                    <h1>Fedorenko Kirill</h1>
-                    <span class="job-position">Design engineer</span>            
-                </aside>
-                <div class="main-information">
-                    <section class="short-discription">
-                        <h2>Short discription</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum corporis iure repellendus impedit excepturi nostrum dolore at tempore? Earum amet labore id doloribus mollitia rerum excepturi nihil tempore perferendis magnam.
-                        </p>
-                    </section>
-                    <section class="skills">
-                        <h2>Skills</h2>
-                        <table class="skills-table">
-                            <thead>
-                                <tr>
-                                    <th>Soft skills</th>
-                                    <th>Hard skills</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Focus on quality</td>
-                                    <td>Autodesk INVENTOR</td>
-                                </tr>
-                                <tr>
-                                    <td>Cooperation</td>
-                                    <td>Autodesk AUTOCAD</td>
-                                </tr>
-                                <tr>
-                                    <td>Adaptability</td>
-                                    <td>Autodesk 3DsMAX</td>
-                                </tr>
-                                <tr>
-                                    <td>Ability to solve problems</td>
-                                    <td>Photoshop</td>
-                                </tr>
-                                <tr>
-                                    <td>Communication</td>
-                                    <td>KeyShot</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </section>
-                    <section class="experience">
-                        <h2>Experience</h2>
-                        <ul>
-                            <li>08.2019-Now.3D designer "MOTORIMPEX" Autodesk INVENTOR</li>
-                            <li>2017-Now.3D designer freelance Autodesk INVENTOR</li>
-                            <li>2016-2017.Implementation of course projects on Internal Combustion Engines</li>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio</title>
+
+        <!-- CSS imports -->
+        <!-- normalize.css must be located at the very beginning of CSS imports list -->
+        <link rel="stylesheet" href="assets/css/normalize.css" />
+        <link rel="stylesheet" href="assets/css/iconfont.css" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <!-- Components styles -->
+        <link rel="stylesheet" href="components/page/index.css" />
+        <link rel="stylesheet" href="components/header/index.css" />
+        <link rel="stylesheet" href="components/content/index.css" />
+        <link rel="stylesheet" href="components/avatar/index.css" />
+        <link rel="stylesheet" href="components/button/index.css" />
+        <link rel="stylesheet" href="components/form/index.css" />
+        <link rel="stylesheet" href="components/footer/index.css" />
+    </head>
+
+    <body>
+        <!-- Q: Why we don't use all content just inside the body? Why we need this <div> wrapper? -->
+        <!-- A: The <body> is just a canvas for us here. And the <div> is used as abstract layer for positioning & stylization ALL THE CONTENT relatively to the body -->
+        <div class="page">
+            <!-- Header -->
+            <header class="header">
+                <div class="container">
+                    <!-- Navigation bar -->
+                    <nav class="navigation">
+                        <ul class="navigation_list">
+                            <li class="navigation_list_item">
+                                <a href="#">Main Info</a>
+                            </li>
+                            <li class="navigation_list_item">
+                                <a href="#">My Projects</a>
+                            </li>
+                            <li class="navigation_list_item">
+                                <a href="#">Contact Me</a>
+                            </li>
                         </ul>
-                    </section>
-                    <section class="hobbies">
-                        <h2>Hobbies</h2>
-                        <ul>
-                            <li>Playing volleyball at a high level</li>
-                            <li>Cycling</li>
-                            <li>Traveling</li>
-                        </ul>
-                    </section>
-                    <section class="contact-form">                       
-                        <h2 >Contacts</h2>
-                        <!-- <div class="contact-type">
-                            <a class="link fas fa-phone"></a>
-                            <a class="contacts-section-link" href="tel:+380663088017">+38(066) 308 80 17</a>
-                        </div>
-                        <div class="contact-type">
-                            <a class="link far fa-message"></a>
-                            <a class="contacts-section-link" href="mailto:kurull.fedorenko@gmail.com">kurull.fedorenko@gmail.com</a> 
-                        </div> -->
-                        <form class="form">
-                            <p><input type="text" name="name" class="feedback-input" placeholder="Name"></p>
-                            <p><input type="email" name="email" class="feedback-input" placeholder="Email"></p>
-                            <p><textarea name="text" placeholder="Massage"></textarea></p>
-                            <input type="submit" value="Submit" class="button-submit">
-                            <div class="ease"></div>
-                        </form>
-                        <div class="social-networks">
-                            <a href="https://www.instagram.com"><i class="link fab fa-instagram"></i></a>
-                            <a href="https://www.facebook.com/profile.php?id=100013575042138"><i class="link fab fa-facebook"></i></a>
-                            <a href="https://www.whatsapp.com"><i class="link fab fa-whatsapp"></i></a>
-                            <a href="https://www.twitter.com"><i class="link fab fa-twitter"></i></a>
-                            <a href="https://www.viber.com"><i class="link fab fa-viber"></i></a>                            
-                        </div>                     
-                    </section>
+                    </nav>
                 </div>
-            </div>
-        </main>
-        <footer>
-            <div class="container">
-                Developed by Kendukhen
-            </div>
-        </footer>
-    </div>
-</body>
+            </header>
+
+            <!-- Content -->
+            <main class="content">
+                <div class="container">
+                    <div class="content-holder">
+                        <!-- Content aside -->
+                        <aside class="content-aside">
+                            <!-- Avatar -->
+                            <div class="avatar_wrapper">
+                                <img
+                                    class="avatar"
+                                    src="assets/img/avatar.jpg"
+                                    alt="avatar"
+                                />
+                            </div>
+
+                            <h1>Fedorenko Kirill</h1>
+                            <span class="job-position">Design engineer</span>
+                        </aside>
+
+                        <!-- Content main -->
+                        <main class="content-main">
+                            <section class="short-description-section">
+                                <h2>Short description</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Cum corporis iure
+                                    repellendus impedit excepturi nostrum dolore
+                                    at tempore? Earum amet labore id doloribus
+                                    mollitia rerum excepturi nihil tempore
+                                    perferendis magnam.
+                                </p>
+                            </section>
+
+                            <section class="skills-section">
+                                <h2>Skills</h2>
+                                <table class="skills-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Soft skills</th>
+                                            <th>Hard skills</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Focus on quality</td>
+                                            <td>Autodesk INVENTOR</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cooperation</td>
+                                            <td>Autodesk AUTOCAD</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Adaptability</td>
+                                            <td>Autodesk 3DsMAX</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ability to solve problems</td>
+                                            <td>Photoshop</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Communication</td>
+                                            <td>KeyShot</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </section>
+
+                            <section class="experience-section">
+                                <h2>Experience</h2>
+                                <ul>
+                                    <li>
+                                        08.2019-Now.3D designer "MOTORIMPEX"
+                                        Autodesk INVENTOR
+                                    </li>
+                                    <li>
+                                        2017-Now.3D designer freelance Autodesk
+                                        INVENTOR
+                                    </li>
+                                    <li>
+                                        2016-2017.Implementation of course
+                                        projects on Internal Combustion Engines
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <section class="hobbies-section">
+                                <h2>Hobbies</h2>
+                                <ul>
+                                    <li>Playing volleyball at a high level</li>
+                                    <li>Cycling</li>
+                                    <li>Traveling</li>
+                                </ul>
+                            </section>
+
+                            <section class="social-networks-section">
+                                <a href="https://www.skype.com">
+                                    <img
+                                        src="assets/img/icons/skype-icon.svg"
+                                        alt="skype-icon"
+                                    />
+                                </a>
+
+                                <a href="https://www.facebook.com">
+                                    <img
+                                        src="assets/img/icons/facebook-icon.svg"
+                                        alt="facebook-icon"
+                                    />
+                                </a>
+
+                                <a href="https://www.instagram.com">
+                                    <img
+                                        src="assets/img/icons/instagram-icon.svg"
+                                        alt="instagram-icon"
+                                    />
+                                </a>
+
+                                <a href="https://www.twitter.com">
+                                    <img
+                                        src="assets/img/icons/twitter-icon.svg"
+                                        alt="twitter-icon"
+                                    />
+                                </a>
+
+                                <a href="https://www.viber.com">
+                                    <img
+                                        src="assets/img/icons/viber-icon.svg"
+                                        alt="viber-icon"
+                                    />
+                                </a>
+                            </section>
+                        </main>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="container">Developed by Kendukhen</div>
+            </footer>
+        </div>
+    </body>
 </html>

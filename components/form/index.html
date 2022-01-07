@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../../assets/css/normalize.css" />
+        <link rel="stylesheet" href="../../assets/css/main.css" />
+        <link rel="stylesheet" href="../button/index.css" />
+        <link rel="stylesheet" href="index.css" />
+    </head>
+
+    <body
+        style="
+            width: 584px;
+            height: auto;
+            padding: 40px;
+            border: 1px solid black;
+        "
+    >
+        <h2
+            style="
+                margin: 0;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 36px;
+                line-height: 100%;
+                padding-bottom: 32px;
+            "
+        >
+            Contact form
+        </h2>
+
+        <!-- The <form> tag represents a low-level tool for sending GET/POST HTTP requests -->
+        <form class="form" method="POST">
+            <div class="form-item">
+                <label class="input__label">
+                    <input
+                        class="input"
+                        id="name"
+                        type="text"
+                        name="name"
+                        placeholder="Name"
+                        required
+                        autofocus
+                        autocapitalize="words"
+                        minlength="2"
+                        maxlength="50"
+                    />
+                    <span class="input__label-message"></span>
+                </label>
+            </div>
+
+            <div class="form-item">
+                <label class="input__label">
+                    <input
+                        class="input"
+                        id="email"
+                        type="email"
+                        name="email"
+                        placeholder="Email"
+                        required
+                    />
+                    <span class="input__label-message"></span>
+                </label>
+            </div>
+
+            <div class="form-item">
+                <label class="input__label">
+                    <textarea
+                        class="input textarea"
+                        name="text"
+                        placeholder="Message"
+                        rows="8"
+                        minlength="30"
+                        maxlength="400"
+                    ></textarea>
+                </label>
+            </div>
+
+            <!-- For submitting the entire form with its all filled inputs, there are should be placed type="submit" for main button -->
+            <button class="button button_primary" type="submit">Send</button>
+        </form>
+    </body>
+</html>

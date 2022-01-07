@@ -1,0 +1,51 @@
+@import url(../fonts/fonts.css);
+
+/* Common root variables */
+:root {
+    --white: #fff;
+    --grey: #ddd2e5;
+    --black: #000;
+    --chocolate: #d2691e;
+    --blueviolet: #8a2be2;
+    --red: #fb3232;
+    --blue-1: #0088cc;
+    --blue-2: #0058cc;
+    --blue-3: #65b5ff;
+    --aqua: #00ffff;
+    --green: #81ff8a;
+    --grey-1: #e3e3e3;
+    --grey-2: #6a6a6a;
+    --grey-3: #495057;
+}
+
+/* Apply styles to all elements */
+* {
+    box-sizing: border-box; /* говорит браузеру учитывать любые границы и внутренние отступы в значениях, которые вы указываете в ширине и высоте элемента */
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px; /* 'rem' unit gets its size from here, related to this value */
+    background-color: var(--white);
+}
+
+main {
+    flex-grow: 1; /* Fill rest of empty body */
+}
+
+/* Common content wrapper */
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0 15px;
+    height: 100%;
+}
+
+th, /* th - thead column */
+td, /* td - tbody column */
+table {
+    border: 1px solid var(--black);
+    border-collapse: collapse;
+}

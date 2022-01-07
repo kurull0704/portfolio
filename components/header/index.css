@@ -1,8 +1,9 @@
-header {
-    background-color: var(--aqua);
-    height: 100px;
+.header {
     position: sticky;
     top: 0;
+    height: 50px;
+    min-height: 50px;
+    background-color: var(--aqua);
 }
 
 .navigation {
@@ -13,7 +14,7 @@ header {
 }
 
 .navigation_list {
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: end;
     list-style: none;
