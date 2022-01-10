@@ -3,19 +3,15 @@
 /* Common root variables */
 :root {
     --white: #fff;
-    --grey: #ddd2e5;
-    --black: #000;
-    --chocolate: #d2691e;
-    --blueviolet: #8a2be2;
-    --red: #fb3232;
-    --blue-1: #0088cc;
-    --blue-2: #0058cc;
-    --blue-3: #65b5ff;
-    --aqua: #00ffff;
-    --green: #81ff8a;
-    --grey-1: #e3e3e3;
-    --grey-2: #6a6a6a;
-    --grey-3: #495057;
+    --light-gray-tint-1: #E3E3E3;
+    --light-gray-tint-2: #A1A1A1;
+    --gray: #6A6A6A;
+    --black: #383838;
+    --pale-orange: #F9DBD7;
+    --light-orange: #F69A8F;
+    --primary-orange: #F06453;
+    --dark-orange: #C35143;
+    --blue: #65B5FF;
 }
 
 /* Apply styles to all elements */
@@ -28,7 +24,7 @@ body {
     height: 100%;
     font-family: 'Inter', sans-serif;
     font-size: 16px; /* 'rem' unit gets its size from here, related to this value */
-    background-color: var(--white);
+    background-color: var(--pale-orange);
 }
 
 main {
@@ -41,6 +37,10 @@ main {
     max-width: 1000px;
     padding: 0 15px;
     height: 100%;
+}
+
+.fullwidth {
+    width: 100%;
 }
 
 th, /* th - thead column */

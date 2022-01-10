@@ -1,11 +1,19 @@
 .button {
-    width: 100%;
-    min-width: 150px;
+    height: 42px;
+    min-width: 96px;
     min-height: 40px;
-    padding: 15px 56px;
+    padding: 0 24px;
     cursor: pointer;
     border: none;
-    border-radius: 4px;
+    border-radius: 12px;
+}
+
+.button__text {
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 100%;
 }
 
 .button:active {
@@ -14,17 +22,49 @@
 }
 
 .button:disabled {
-    opacity: 0.5;
     pointer-events: none; /* Disables pointer state of cursor */
-}
+} 
 
 /* Button Primary */
 
 .button_primary {
-    background-color: var( --blue-1 );
+    background-color: var( --primary-orange );
     color: var( --white );
 }
 
 .button_primary:hover {
-    background-color: var( --blue-2 );
+    background-color: var( --light-orange );
+}
+
+.button_primary:active {
+    background-color: var( --dark-orange );
+}
+
+.button_primary:disabled {
+    background-color: var( --light-gray-tint-1 );
+    color: var( --light-gray-tint-2 );
+}
+
+/* Button Secondary */
+
+.button_secondary {
+    border: 2px solid var( --gray );
+    color: var( --gray );
+    background-color: transparent;
+}
+
+.button_secondary:hover {
+    background-color: var( --gray );
+    color: var( --white );
+}
+
+.button_secondary:active {
+    border: 2px solid var( --black );
+    background-color: var( --black );
+    color: var( --white );
+}
+
+.button_secondary:disabled {
+    border: 2px solid var( --light-gray-tint-2);
+    color: var( --light-gray-tint-2 );
 }
