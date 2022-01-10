@@ -1,11 +1,11 @@
 .button {
     height: 42px;
-    min-width: 96px;
     min-height: 40px;
     padding: 0 24px;
     cursor: pointer;
     border: none;
     border-radius: 12px;
+    display: inline-block;
 }
 
 .button__text {
@@ -67,4 +67,43 @@
 .button_secondary:disabled {
     border: 2px solid var( --light-gray-tint-2);
     color: var( --light-gray-tint-2 );
+}
+
+/* Button Social */
+
+.button_social { /* <a> */
+    height: 40px;
+    width: 40px;
+    border: 2px solid var( --primary-orange );
+    padding: 0;
+    display: inline-flex;
+    color: var( --primary-orange );
+}
+
+.button_social_disabled {
+    border: 2px solid var( --light-gray-tint-2 );
+    color: var( --light-gray-tint-2 );
+}
+
+.social-image {  /* <svg> */
+    margin: auto;
+    max-width: 10px;
+    max-height: 18px;
+}
+
+.button_social:hover {
+    background-color: var( --primary-orange );
+}
+
+.button_social:hover .social-image {
+    color: var( --white );
+}
+
+.button_social:active {
+    background-color: var( --dark-orange );
+    border: 2px solid var( --dark-orange );
+}
+
+.button_social:active .social-image {
+    color: var( --white );
 }
