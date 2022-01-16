@@ -69,56 +69,41 @@
     color: var( --light-gray-tint-2 );
 }
 
-/* .button_social {
+/* Button Social */
+
+.button_social { /* <a> */
     height: 40px;
     width: 40px;
     border: 2px solid var( --primary-orange );
     padding: 0;
     display: inline-flex;
-} */
+    color: var( --primary-orange );
+}
 
-/* .button_social_disabled {
-    border: 2px solid var( --primary-orange );
-} */
+.button_social_disabled {
+    border: 2px solid var( --light-gray-tint-2 );
+    color: var( --light-gray-tint-2 );
+}
 
-.social_image {
-    height: 40px;
-    width: 40px;
+.social-image {  /* <svg> */
     margin: auto;
-    border: 2px solid var( --primary-orange );
-    padding: 5px;
-    display: inline-flex;
+    max-width: 10px;
+    max-height: 18px;
 }
 
- .social_image_sets {
-    height: 18px;
-    width: 18px;
-    border-radius: 0;
-    fill: var( --primary-orange );
+.button_social:hover {
+    background-color: var( --primary-orange );
 }
 
-.social_image:hover {
-    background-color: var( --primary-orange ); 
+.button_social:hover .social-image {
+    color: var( --white );
 }
 
-.social_image:hover .social_image_sets{ 
-    fill: var( --white );
-    background-color: var( --primary-orange ); 
-}
-
-.social_image:active {
-    background-color: var( --dark-orange ); 
+.button_social:active {
+    background-color: var( --dark-orange );
     border: 2px solid var( --dark-orange );
 }
 
-.social_image:active .social_image_sets {
-    fill: var( --white );
-    background-color: var( --dark-orange );
+.button_social:active .social-image {
+    color: var( --white );
 }
-/* .social_image_sets:disabled {
-    fill: var( --primary-orange );
-} */
-.rounded {
-    border-radius: 50%;
-}
-

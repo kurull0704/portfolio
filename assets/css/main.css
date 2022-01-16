@@ -40,7 +40,16 @@ main {
 }
 
 .fullwidth {
-    width: 100%;
+    width: 100% !important;
+}
+
+.rounded {
+    border-radius: 50% !important;
+}
+
+.disabled {
+    pointer-events: none !important;
+    cursor: default !important;
 }
 
 th, /* th - thead column */
