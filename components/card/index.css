@@ -1,0 +1,49 @@
+.card {
+    width: 299px;
+    height: 112px;
+    border: 1px solid var( --gray );
+    border-radius: 12px;
+    background-color: var( --white );
+    display: flex;
+    font-family: Roboto;
+    line-height: 100%;
+    cursor: pointer;
+}
+
+.img_block {
+    width: 80px;
+    height: 64px;
+    margin: auto 24px;
+}
+
+.text_block {
+    display: flex;
+    flex-direction: column; 
+    align-self: center;
+}
+
+.text_block_dates {
+    font-weight: bold;
+    font-size: 14px;
+    color: var( --gray );
+}
+
+.text_block_company {
+    font-weight: bold;
+    font-size: 18px;
+    color: var( --black );
+    margin-top: 12px;
+}
+
+.text_block_profession {
+    font-weight: normal;
+    font-size: 14px;
+    color: var( --gray );
+    margin-top: 6px;
+}
+
+.card:hover {
+    border: 1px solid var( --primary-orange );
+    outline: 2px solid var( --primary-orange );
+    outline-offset: -2px;
+}
