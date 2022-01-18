@@ -1,0 +1,57 @@
+.card {
+    min-width: 299px;
+    height: 112px;
+    padding: 24px;
+    border: 1px solid var( --gray );
+    border-radius: 12px;
+    background-color: var( --white );
+    display: inline-flex;
+    cursor: pointer;
+}
+
+.card:hover {
+    border-color: transparent;
+    outline: 2px solid var( --primary-orange );
+    outline-offset: -2px;
+}
+
+.card__logo {
+    max-width: 80px;
+    height: 100%;
+    margin-right: 16px;
+}
+
+.card__info {
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+}
+
+.card__info-period {
+    color: var( --gray );
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 100%;
+    flex-grow: 1; /* takes all empty space */
+}
+
+.card__info-company {
+    color: var( --black );
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 100%;
+    margin-bottom: 6px;
+}
+
+.card__info-position {
+    color: var( --gray );
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 100%;
+}
