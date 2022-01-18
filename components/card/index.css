@@ -1,49 +1,57 @@
 .card {
-    width: 299px;
+    min-width: 299px;
     height: 112px;
+    padding: 24px;
     border: 1px solid var( --gray );
     border-radius: 12px;
     background-color: var( --white );
-    display: flex;
-    font-family: Roboto;
-    line-height: 100%;
+    display: inline-flex;
     cursor: pointer;
 }
 
-.img_block {
-    width: 80px;
-    height: 64px;
-    margin: auto 24px;
-}
-
-.text_block {
-    display: flex;
-    flex-direction: column; 
-    align-self: center;
-}
-
-.text_block_dates {
-    font-weight: bold;
-    font-size: 14px;
-    color: var( --gray );
-}
-
-.text_block_company {
-    font-weight: bold;
-    font-size: 18px;
-    color: var( --black );
-    margin-top: 12px;
-}
-
-.text_block_profession {
-    font-weight: normal;
-    font-size: 14px;
-    color: var( --gray );
-    margin-top: 6px;
-}
-
 .card:hover {
-    border: 1px solid var( --primary-orange );
+    border-color: transparent;
     outline: 2px solid var( --primary-orange );
     outline-offset: -2px;
+}
+
+.card__logo {
+    max-width: 80px;
+    height: 100%;
+    margin-right: 16px;
+}
+
+.card__info {
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+}
+
+.card__info-period {
+    color: var( --gray );
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 100%;
+    flex-grow: 1; /* takes all empty space */
+}
+
+.card__info-company {
+    color: var( --black );
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 100%;
+    margin-bottom: 6px;
+}
+
+.card__info-position {
+    color: var( --gray );
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 100%;
 }
