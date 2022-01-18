@@ -1,0 +1,29 @@
+.link {
+    font-family: Roboto;
+    text-decoration: none;
+    color: var( --black );
+    /* display: inline-block; */
+    margin: 0;
+    padding: 0;
+}
+
+.link:hover {
+    color: var( --primary-orange );
+}
+
+.link:active {
+    color: var( --dark-orange );
+}
+
+.link_disabled {
+    color: var( --light-gray-tint-2 );
+    pointer-events: none;
+}
+
+.link__text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 100%;
+    display: inline-block;
+}
