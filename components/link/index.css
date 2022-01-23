@@ -2,9 +2,8 @@
     font-family: Roboto;
     text-decoration: none;
     color: var( --black );
-    /* display: inline-block; */
-    margin: 0;
-    padding: 0;
+    display: inline-block;
+    line-height: 1; /* 1 = 100% - equals font-size */
 }
 
 .link:hover {
