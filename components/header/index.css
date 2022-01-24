@@ -1,9 +1,24 @@
 .header {
     position: sticky;
     top: 0;
-    height: 50px;
-    min-height: 50px;
+    height: 80px;
+    min-height: 80px;
     background-color: var(--white);
+    margin-bottom: 40px;
+}
+.container {
+    display: flex;
+}
+
+.page__name {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 100%;
+    color: var( --black ); 
+    display: flex;
+    align-items: center;
 }
 
 .navigation {
@@ -28,7 +43,7 @@
     margin-right: 10px;
 }
 
-.navigation_list_item a {
+/* .navigation_list_item a {
     color: inherit;
     text-transform: uppercase;
-}
+} */

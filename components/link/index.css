@@ -2,7 +2,7 @@
     font-family: Roboto;
     text-decoration: none;
     color: var( --black );
-    display: inline-block;
+    /* display: inline-block; */
     line-height: 1; /* 1 = 100% - equals font-size */
 }
 

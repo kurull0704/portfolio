@@ -1,5 +1,20 @@
 .footer {
-    background-color: var(--chocolate);
-    height: 80px;
+    height: 144px;
     min-height: 80px;
+    color: var( --gray );
+    margin: auto;
+}
+
+.footer_container {
+    display: flex;
+    align-items: center;
+}
+
+.footer__text {
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 100%;
 }
