@@ -1,11 +1,11 @@
 .footer {
-    height: 144px;
     min-height: 80px;
     color: var( --gray );
-    margin: auto;
+    display: flex;
+    padding: 64px 0;
 }
 
-.footer_container {
+.footer__container {
     display: flex;
     align-items: center;
 }

@@ -3,6 +3,7 @@
 /* Common root variables */
 :root {
     --white: #fff;
+    --light-gray-tint-0: #F9F9F9;
     --light-gray-tint-1: #E3E3E3;
     --light-gray-tint-2: #A1A1A1;
     --gray: #6A6A6A;
@@ -29,13 +30,12 @@ body {
 
 main {
     flex-grow: 1; /* Fill rest of empty body */
-    background-color: var( --white ) ;
 }
 
 /* Common content wrapper */
 .container {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1230px; /* 1200px - width, 30px - paddings */
     padding: 0 15px;
     height: 100%;
 }

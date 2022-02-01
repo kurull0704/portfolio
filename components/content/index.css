@@ -1,49 +1,50 @@
 .content {
-    background-color: var(--blueviolet);
-    border-radius: 12px;
 }
 
 .content-holder {
     display: flex;
     height: 100%;
     border-radius: 12px;
+    overflow: hidden;
 }
 
 /* Content aside */
 
 .content-aside {
-    width: 40%;
-    min-width: 100px;
-    background-color: var( --light-gray-tint-1 );
+    width: 443px;
+    min-width: 443px;
+    background-color: var( --light-gray-tint-0 );
     display: flex;
     flex-direction: column;
+    padding: 64px;
 }
 
-h1 {
+.content-aside__name {
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
     line-height: 100%;
     color: var( --black );
+    padding-bottom: 16px;
 }
 
-.job-position {
+.content-aside__job-position {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
     line-height: 100%;
     color: var( --gray );
-
 }
 /* Content main */
 
 .content-main {
     width: 100%;
-    padding: 20px;
+    padding: 64px;
     display: flex;
     flex-direction: column;
+    background-color: var( --white );
 }
 
 .short-description-section {

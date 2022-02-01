@@ -6,11 +6,14 @@
     background-color: var(--white);
     margin-bottom: 40px;
 }
-.container {
+.header__container {
     display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    align-items: center;
 }
 
-.page__name {
+.header__page-name {
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -21,29 +24,24 @@
     align-items: center;
 }
 
-.navigation {
+.header__navigation {
     display: flex;
     align-items: center;
     height: 100%;
     width: 100%;
 }
 
-.navigation_list {
+.header__navigation_list {
     display: flex;
+    /* align-items: center; */
     flex-direction: row;
     justify-content: end;
     list-style: none;
     padding: 0;
-    margin: 0;
-    align-items: center;
+    /* margin: 0; */
     width: 100%;
 }
 
-.navigation_list_item {
-    margin-right: 10px;
+.header__navigation_list_item {
+    margin-left: 10px;
 }
-
-/* .navigation_list_item a {
-    color: inherit;
-    text-transform: uppercase;
-} */
