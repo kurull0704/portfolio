@@ -2,7 +2,7 @@
     min-width: 299px;
     height: 112px;
     padding: 24px;
-    border: 1px solid var( --gray );
+    border: 1px solid var( --light-gray-tint-1 );
     border-radius: 12px;
     background-color: var( --white );
     display: inline-flex;
@@ -17,6 +17,7 @@
 
 .card__logo {
     max-width: 80px;
+    min-width: 80px;
     height: 100%;
     margin-right: 16px;
 }

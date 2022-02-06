@@ -1,5 +1,19 @@
 .footer {
-    background-color: var(--chocolate);
-    height: 80px;
-    min-height: 80px;
+    display: flex;
+    color: var( --gray );
+    padding: 64px 0;
+}
+
+.footer__container {
+    display: flex;
+    align-items: center;
+}
+
+.footer__text {
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 100%;
 }
