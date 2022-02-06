@@ -1,4 +1,5 @@
 .content {
+    background-color: var(--blueviolet);
 }
 
 .content-holder {
@@ -19,13 +20,21 @@
     padding: 64px;
 }
 
+.content-aside__avatar {
+    width: 315px;
+    padding-bottom: 40px;
+}
+
+.content-aside__avatar img {
+    border-radius: 12px;
+}
+
 .content-aside__name {
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
     line-height: 100%;
-    color: var( --black );
     padding-bottom: 16px;
 }
 
@@ -37,6 +46,7 @@
     line-height: 100%;
     color: var( --gray );
 }
+
 /* Content main */
 
 .content-main {
@@ -61,6 +71,12 @@
 .experience-section {
 }
 
+.experience-section__card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
 .hobbies-section {
 }
 
@@ -70,8 +86,4 @@
     align-items: flex-end;
     width: 100%;
     height: 100%;
-}
-
-a {
-    height: 24px;
 }

@@ -6,6 +6,7 @@
     background-color: var(--white);
     margin-bottom: 40px;
 }
+
 .header__container {
     display: flex;
     width: 1200px;
@@ -27,21 +28,19 @@
 .header__navigation {
     display: flex;
     align-items: center;
-    height: 100%;
-    width: 100%;
+    flex-grow: 1;
 }
 
-.header__navigation_list {
+.header__navigation-list {
     display: flex;
-    /* align-items: center; */
-    flex-direction: row;
     justify-content: end;
+    align-items: center;
+    flex-grow: 1;
     list-style: none;
     padding: 0;
-    /* margin: 0; */
-    width: 100%;
+    margin: 0;
 }
 
-.header__navigation_list_item {
+.header__navigation-list-item {
     margin-left: 10px;
 }

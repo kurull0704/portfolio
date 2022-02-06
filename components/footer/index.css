@@ -1,7 +1,6 @@
 .footer {
-    min-height: 80px;
-    color: var( --gray );
     display: flex;
+    color: var( --gray );
     padding: 64px 0;
 }
 

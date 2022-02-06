@@ -9,7 +9,6 @@
         <!-- CSS imports -->
         <!-- normalize.css must be located at the very beginning of CSS imports list -->
         <link rel="stylesheet" href="assets/css/normalize.css" />
-        <link rel="stylesheet" href="assets/css/iconfont.css" />
         <link rel="stylesheet" href="assets/css/main.css" />
         <!-- Components styles -->
         <link rel="stylesheet" href="components/page/index.css" />
@@ -29,27 +28,28 @@
         <div class="page">
             <!-- Header -->
             <header class="header">
-                <div class="header__container">
+                <div class="container header__container">
                     <div class="header__page-name">Portfolio</div>
+
                     <!-- Navigation bar -->
                     <nav class="header__navigation">
-                        <ul class="header__navigation_list">
-                            <li class="header__navigation_list_item">
+                        <ul class="header__navigation-list">
+                            <li class="header__navigation-list-item">
                                 <a class="link" href="#">
                                     <span class="link__text">Main info</span>
                                 </a>
                             </li>
-                            <li class="header__navigation_list_item">
+                            <li class="header__navigation-list-item">
                                 <a class="link" href="#">
                                     <span class="link__text">My projects</span>
                                 </a>
                             </li>
-                            <li class="header__navigation_list_item">
+                            <li class="header__navigation-list-item">
                                 <button class="button button_primary">
                                     <span class="button__text">Contact me</span>
                                 </button>
                             </li>
-                            <li class="header__navigation_list_item">
+                            <li class="header__navigation-list-item">
                                 <a class="link" download href="assets/pdf/obrazec_rez_eng.pdf" target="_blank" >
                                     <button class="button button_secondary">
                                         <span class="button__text">Download CV</span>
@@ -58,6 +58,7 @@
                             </li>
                         </ul>
                     </nav>
+
                 </div>
             </header>
 
@@ -68,16 +69,21 @@
                         <!-- Content aside -->
                         <aside class="content-aside">
                             <!-- Avatar -->
-                            <div class="avatar_wrapper">
-                                <img
-                                    class="avatar"
-                                    src="assets/img/avatar.jpg"
-                                    alt="avatar"
-                                />
+                            <div class="content-aside__avatar">
+                                <div class="avatar__wrapper">
+                                    <img
+                                        class="avatar"
+                                        src="assets/img/avatar.jpg"
+                                        alt="avatar"
+                                    />
+                                </div>
                             </div>
-
-                            <h1 class="content-aside__name">Fedorenko Kirill</h1>
-                            <span class="content-aside__job-position">Design engineer</span>
+                            <div class="content-aside__name">
+                                Fedorenko Kirill
+                            </div>
+                            <div class="content-aside__job-position">
+                                <span class="job-position">Design engineer</span>
+                            </div>
                         </aside>
 
                         <!-- Content main -->
@@ -130,13 +136,13 @@
 
                             <section class="experience-section">
                                 <h2>Experience</h2>
-                                <div class="experience_cards">
+                                <div class="experience-section__card-container">
                                     <div class="card">
                                         <div class="card__logo">
                                             <img src="assets/img/motorlogo.svg" alt="Motor logo">
                                         </div>
                                         <div class="card__info">
-                                            <span class="card__info-period">August 2019 - Now</span>
+                                            <span class="card__info-period">Aug 2019 - Now</span>
                                             <span class="card__info-company">Motorimpex</span>
                                             <span class="card__info-position">Design engineer</span>
                                         </div>
@@ -146,21 +152,11 @@
                                             <img src="assets/img/freelancer-icon.svg" alt="Motor logo">
                                         </div>
                                         <div class="card__info">
-                                            <span class="card__info-period">2017 - Now</span>
+                                            <span class="card__info-period">Jan 2017 - Aug 2019</span>
                                             <span class="card__info-company">Freelance</span>
                                             <span class="card__info-position">Design engineer</span>
                                         </div>
                                     </div>
-                                    <!-- <div class="card">
-                                        <div class="card__logo">
-                                            <img src="/assets/img/motorlogo.svg" alt="Motor logo">
-                                        </div>
-                                        <div class="card__info">
-                                            <span class="card__info-period">October 2019 - November 2020</span>
-                                            <span class="card__info-company">Motorimpex</span>
-                                            <span class="card__info-position">Design engineer</span>
-                                        </div>
-                                    </div> -->
                                 </div>
                             </section>
 
