@@ -107,3 +107,7 @@
 .button_social:active .social-image {
     color: var( --white );
 }
+
+.button_social:not(:last-child){
+    margin-right: 15px;
+}

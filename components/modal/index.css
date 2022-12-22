@@ -1,0 +1,47 @@
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, .56);
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 380px;
+    min-height: 400px;
+    background-color: #f2f2f2;
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.modal__subtitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.modal__close {
+    font-size: 24px;
+    line-height: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+}
+
+#projects {
+    display: none;
+}
+
+
+.modal__descr {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
