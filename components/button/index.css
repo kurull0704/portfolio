@@ -1,113 +1,126 @@
 .button {
-    height: 42px;
-    min-height: 40px;
-    padding: 0 24px;
-    cursor: pointer;
-    border: none;
-    border-radius: 12px;
-    display: inline-block;
+	height: 42px;
+	min-height: 40px;
+	padding: 0 24px;
+	cursor: pointer;
+	border: none;
+	border-radius: 12px;
+	display: inline-block;
 }
 
 .button__text {
-    text-align: center;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 100%;
+	text-align: center;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 100%;
 }
 
 .button:active {
-    transition: ease-in;
-    transition-duration: 100ms;
+	transition: ease-in;
+	transition-duration: 100ms;
 }
 
 .button:disabled {
-    pointer-events: none; /* Disables pointer state of cursor */
-} 
+	pointer-events: none;
+	/* Disables pointer state of cursor */
+}
 
 /* Button Primary */
 
 .button_primary {
-    background-color: var( --primary-orange );
-    color: var( --white );
+	background-color: var(--primary-orange);
+	color: var(--white);
 }
 
 .button_primary:hover {
-    background-color: var( --light-orange );
+	background-color: var(--light-orange);
 }
 
 .button_primary:active {
-    background-color: var( --dark-orange );
+	background-color: var(--dark-orange);
 }
 
 .button_primary:disabled {
-    background-color: var( --light-gray-tint-1 );
-    color: var( --light-gray-tint-2 );
+	background-color: var(--light-gray-tint-1);
+	color: var(--light-gray-tint-2);
 }
 
 /* Button Secondary */
 
 .button_secondary {
-    border: 2px solid var( --gray );
-    color: var( --gray );
-    background-color: transparent;
+	border: 2px solid var(--gray);
+	color: var(--gray);
+	background-color: transparent;
 }
 
 .button_secondary:hover {
-    background-color: var( --gray );
-    color: var( --white );
+	background-color: var(--gray);
+	color: var(--white);
 }
 
 .button_secondary:active {
-    border: 2px solid var( --black );
-    background-color: var( --black );
-    color: var( --white );
+	border: 2px solid var(--black);
+	background-color: var(--black);
+	color: var(--white);
 }
 
 .button_secondary:disabled {
-    border: 2px solid var( --light-gray-tint-2);
-    color: var( --light-gray-tint-2 );
+	border: 2px solid var(--light-gray-tint-2);
+	color: var(--light-gray-tint-2);
 }
 
 /* Button Social */
 
-.button_social { /* <a> */
-    height: 40px;
-    width: 40px;
-    border: 2px solid var( --primary-orange );
-    padding: 0;
-    display: inline-flex;
-    color: var( --primary-orange );
+.button_social {
+	/* <a> */
+	height: 40px;
+	width: 40px;
+	border: 2px solid var(--primary-orange);
+	padding: 0;
+	display: inline-flex;
+	color: var(--primary-orange);
+}
+
+.bs-xl {
+	height: 80px;
+	width: 80px;
 }
 
 .button_social_disabled {
-    border: 2px solid var( --light-gray-tint-2 );
-    color: var( --light-gray-tint-2 );
+	border: 2px solid var(--light-gray-tint-2);
+	color: var(--light-gray-tint-2);
 }
 
-.social-image {  /* <svg> */
-    margin: auto;
-    max-width: 18px;
-    max-height: 18px;
+.social-image {
+	/* <svg> */
+	margin: auto;
+	max-width: 18px;
+	max-height: 18px;
+}
+
+.si-xl {
+	max-width: 36px;
+	max-height: 36px;
 }
 
 .button_social:hover {
-    background-color: var( --primary-orange );
+	background-color: var(--primary-orange);
 }
 
 .button_social:hover .social-image {
-    color: var( --white );
+	color: var(--white);
 }
 
 .button_social:active {
-    background-color: var( --dark-orange );
-    border: 2px solid var( --dark-orange );
+	background-color: var(--dark-orange);
+	border: 2px solid var(--dark-orange);
 }
 
 .button_social:active .social-image {
-    color: var( --white );
+	color: var(--white);
 }
 
-.button_social:not(:last-child){
-    margin-right: 15px;
+.button_social:not(:last-child) {
+	margin-right: 15px;
 }
